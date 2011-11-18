@@ -2,6 +2,13 @@
 /*[date¤18:11:2011]¤¤code_[ ... */
 /* [absolute]>[absolute:hidden>[relative:width-height;left:-50%;margin-top:-25%;]:to-center;] */
 /* _position right-bottom_float_scale(1)_ */
+/* usage:
+
+<div onclick="http://www.w3.org/html/logo/" class="HTML5_logo_">
+	<div><div></div></div>
+</div>
+
+*/
 
 .HTML5_logo_{
 	display:block;
