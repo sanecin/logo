@@ -63,7 +63,7 @@ box-shadow:0 0 24px #000000;
 	-moz-transform:scale(1);
 	-o-transform:scale(1);/**/
 	visibility:visible;
-	opacity:1;
+	opacity:1;z-index:1000;
 }
 
 /* [Copyright 18/11/2011 SanEcIn][] ¤][¤¤] */
