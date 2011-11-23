@@ -76,9 +76,9 @@ menu[type*="float"] {position:relative;min-height:30px;}
 
 menu[type*="float"]>menu {position:absolute;background-color:transparent;visibility:hidden;}/**/
 
-menu[type*="float"]>*>*{position:relative;opacity:0;-webkit-transform:scale(0);visibility:hidden;}/* ...position:absolute; */
+menu[type*="float"]>*>*{position:relative;-webkit-transform:scale(0);visibility:hidden;}/*opacity:0; ... */
 
-menu[type*="float"]:hover>*>* {visibility:visible;opacity:1;-webkit-transform:scale(1);}		/*z-index:1000;	... fired blink hover ... */
+menu[type*="float"]:hover>*>* {visibility:visible;-webkit-transform:scale(1);}		/*opacity:1;z-index:1000;	... fired blink hover ... */
 
 /*][vectors ... */
 
