@@ -49,57 +49,55 @@ section h2 {font-size:16px;color:#ffffff;}
 
 
 
-
-
 section menu[type="in"] {}		/* ...width:100%;height:100%; */
 
 section menu[type="hole"] {}		/* ...width:100%;height:100%;position:relative; */
 section menu[type="hole"]>*{position:absolute;background-color:#000000;color:#ffffff;}		/* ...width:100%;height:100%; */
 
 section menu[type="hole_"] {}		/*opacity:0;visibility:hidden; ... width:100%;height:100%;position:relative;*/
-section menu[type="hole_"]>*{position:absolute;background-color:#000000;color:#ffffff;}		/*visibility:hidden; ...width:100%;height:100%; */
+section menu[type="hole_"]>*{position:absolute;background-color:#ff00ff;color:#000000;}		/*visibility:hidden; ...width:100%;height:100%; */
 
 section menu[type="in_"]:hover>*>* {visibility:visible;opacity:1;}		/* ...width:100%;height:100%; */
 
 
 .exp {width:100%;height:100%;bottom:0px;}
-.abs {position:absolute;left:0%;top:0%;background-color:#800000;}
+.abs {position:absolute;background-color:#800000;}/*left:0%;top:0%;*/
 .rel {position:relative;	background-color:#800000;
 	left:0%;/*left:-100%;margin-top:-50%!?;-ëåâ.âåðõ/left:-50%;margin-top:-25%;-öåíòð*/
 	margin-top:0%;
 }
 
-.UpLeft {left:-0%;top:-0%;}
-.UpLeft>* {left:-100%;margin-top:-25%;background-color:#ff00ff;}
+.UpLeft {left:0%;top:-0%;}
+.UpLeft>* {left:-100%;margin-top:-100%;background-color:#ffd000;}
 .Up {left:0%;top:-0%;}
-.Up>* {left:0%;margin-top:-25%;background-color:#ff00ff;}
+.Up>* {left:0%;margin-top:-100%;background-color:#d0ff00;}
 .UpRight {left:100%;top:-0%;}
-.UpRight>* {left:0%;margin-top:-25%;background-color:#ff00ff;}
+.UpRight>* {left:0%;margin-top:-100%;margin-bottom:-0%;background-color:#ffff00;}
 .Right{left:100%;top:0%;}
-.Right>*{left:0%;margin-top:0%;background-color:#ff00ff;}
+.Right>*{left:0%;margin-top:0%;background-color:#ff0000;}
 .DownRight{left:100%;top:100%;}
 .DownRight>*{left:0%;margin-top:0%;background-color:#ff00ff;}
 .Down{left:0%;top:100%;}
-.Down>*{left:0%;margin-top:0%;background-color:#ff00ff;}
+.Down>*{left:0%;margin-top:0%;background-color:#0000ff;}
 .DownLeft{left:0%;top:100%;}
-.DownLeft>*{left:-100%;margin-top:0%;background-color:#ff00ff;}
+.DownLeft>*{left:-100%;margin-top:0%;background-color:#00ff00;}
 .Left{left:0%;top:0%;}
-.Left>*{left:-100%;margin-top:0%;background-color:#ff00ff;}
+.Left>*{left:-100%;margin-top:0%;background-color:#00ffff;}
 
-menu[type="float"] {height:30px;width:30px;position:relative;}
+menu[type="float"] {min-height:30px;position:relative;}
 
-menu[type="float"]>* {position:absolute;background-color:none;visibility:hidden;opacity:0;}
+menu[type="float"]>* {position:absolute;background-color:#0000ff;visibility:hidden;}/**/
 
-menu[type="float"]>*{position:absolute;background-color:none;visibility:hidden;opacity:0;}
+menu[type="float"]>*>*{position:relative;}/* ...position:absolute; */
+menu[type="float"]>menu[class^="Up"]>*{} /*overflow-y:auto;height:130px;height:230px;width:230px; made fatal ... */
+/*menu[type="float"]>*>*>*{position:static;} ...position:absolute; */
 
-menu[type="float"]>*>*{position:relative;}
+/* menu[type="context"]>*>*{}  *//* ... */
 
-/*menu[type="context"]>*>*{left:0%;margin-top:0%;}	visibility:hidden; ! visibility:visible;opacity:0;transform:scale(0);*/
-
-/* menu[type="context"]>*>*{position:static;}  *//* ... */
-
-menu[type="float"]:hover>*{visibility:visible;opacity:1;z-index:1000;}			/*... fired blink hover ... */
+/*menu[type="float"]:hover>*{visibility:visible;opacity:1;z-index:1000;}			... DEBUG ... */
 menu[type="float"]:hover>*>*{visibility:visible;opacity:1;z-index:1000;}			/*... fired blink hover ... */
+
+
 </style>
 
 
@@ -117,12 +115,12 @@ menu[type="float"]:hover>*>*{visibility:visible;opacity:1;z-index:1000;}			/*...
 
 
 
-<!--&nbsp;<br />&nbsp;
+<!--&nbsp;<br />&nbsp;-->
 
 
 
 
- <menu type="toolbar">&nbsp;Default_menu_&nbsp;
+ <menu type="toolbar"><menu>&nbsp;<i class="list"> Default_menu_ </i>&nbsp;</menu>
 	<menu type="context">toolbar&gt;context<menu><menu>
 		<menu>=
 		</menu>
@@ -212,11 +210,118 @@ menu[type="float"]:hover>*>*{visibility:visible;opacity:1;z-index:1000;}			/*...
 		</menu>&nbsp;</menu>
 		<br /><br />
 	</menu></menu></menu>
+
+
+
+
+
+
+
+<!--/*[¤[TeRmiNuS_]@[BUGfix.html]¤v_1.0_¤ ... */
+/*[date¤23:11:2011]¤¤code_[ ... */-->
+
+			<menu type="context"><i>&nbsp;BUGfix¤1.0_&nbsp;</i>&nbsp;&nbsp;<menu><menu><i>overflow BUGfix</i>
+				<br />
+				<br />
+				<menu type="toolbar">!toolbar
+					<menu type="context">?toolbar<menu>
+						<menu type="toolbar">
+							<menu type="context">?toolbar<br />&nbsp;<br />&nbsp;<menu>
+								<menu type="toolbar">
+									<menu type="context">?toolbar<br />&nbsp;<br />&nbsp;<menu>
+										<menu type="toolbar">
+											<menu type="context">?toolbar<br />&nbsp;<br />&nbsp;<menu>
+												<menu type="toolbar">
+													<menu>-toolbar<br />&nbsp;<br />&nbsp;
+													</menu>
+													<menu>
+													</menu>
+													<menu>
+													</menu>
+												</menu>
+											</menu></menu>
+											<menu>
+											</menu>
+											<menu>
+											</menu>
+										</menu>
+									</menu></menu>
+									<menu>
+									</menu>
+									<menu>
+									</menu>
+								</menu>
+							</menu></menu>
+							<menu>
+							</menu>
+							<menu>
+							</menu>
+						</menu>
+					</menu></menu>
+						<menu type="context">!context<menu type="list">
+							<br />INHERIT<br /><i>INHERIT</i><br />INHERIT<br /><menu type="list">INHERIT<menu type="context">INHERIT</menu></menu>INHERIT<br /><menu type="list"><i>INHERIT</i></menu><br /><menu type="hole"><i>INHERIT</i></menu><br /><br /><br />
+							<menu>overflow
+							</menu>
+						</menu></menu>
+						<menu type="context">?context<menu><menu>
+							<br />menu<br /><i>menu</i><br /><menu>menu</menu><br /><menu><i>menu</i></menu><br /><br /><br /><br /><br /><br /><br /><br />
+							<menu>overflow
+							</menu>
+						</menu></menu></menu>
+				</menu>
+				<br />
+				<br />
+				<menu type="toolbar">overflow BUGfix
+					<menu type="hole">=hole
+					</menu>
+					<menu type="context">=context<menu><menu type="hole">
+						EMPTY type=context
+					</menu></menu></menu>
+					<menu type="context">?context<menu>
+						<br />INHERIT<br />INHERIT<br />INHERIT<br />INHERIT<br />INHERIT<br />INHERIT<br />INHERIT<br />
+						<menu>overflow
+						</menu>
+					</menu></menu>
+				</menu>
+				<br />
+				<br />
+				<menu type="toolbar">+toolbar
+					<menu>=
+					</menu>
+					<menu type="context">!hole<menu type="hole">Hole<br />&nbsp;
+						<menu>=
+						</menu>
+						<menu>???????
+							<menu>in hole!
+							</menu>
+							<menu>in hole?
+							</menu>
+						</menu>
+						<menu><a href="#url">a=href<br />.</a>
+						</menu>
+					</menu></menu>
+					<menu type="context">=context<menu type="list">
+						<br />INHERIT<br />INHERIT<br />INHERIT<br />
+						<menu>overflow
+						</menu>
+					</menu></menu>
+					<br />
+				</menu>
+				<br />
+				<br />
+				<menu type="hole"><a href="#url">a=href</a>
+				</menu>
+				<br />
+				<br />
+			</menu></menu></menu>
+
+<!--/* [Copyright 23/11/2011 SanEcIn][end_BUGfix.html ¤][¤¤]] */-->
+
 </menu>
 
 &nbsp; <div class="abs"></div>
 
-</article><article>-->
+</article><article>
 
 <menu type="toolbar">
 
@@ -249,40 +354,43 @@ menu[type="float"]:hover>*>*{visibility:visible;opacity:1;z-index:1000;}			/*...
 
 &nbsp;
 <!-- -->
+
+<br /><br /><br />
+
 <menu type="toolbar">
 
 	<menu>
 		<menu type="context">Floats<menu>
-			<menu type="float">UpLeft<menu class="UpLeft">
-				<menu class="list">UpLeft
-				</menu>
-			</menu></menu>
 			<menu type="float">Up<menu class="Up">
-				<menu class="list">Up
+				<menu> ... ? Up ... <br><br><br><br>... here is <br /> the some <br /> <i>text</i>for Example<br /><i>ChromeOverflowBug</i>
 				</menu>
 			</menu></menu>
-			<menu type="float">UpRight<menu class="UpRight">
-				<menu class="list">UpRight
+			<menu type="float">UpLeft<menu class="UpLeft">
+				<menu>UpLeft<br /><br /><i>ChromeOverflowBug</i>
 				</menu>
 			</menu></menu>
 			<menu type="float">Left<menu class="Left">
-				<menu>Left
+				<menu>Left•••••••••••••••••••••••Width<br /><br /><br /><br />.
+				</menu>
+			</menu></menu>
+			<menu type="float">UpRight<menu class="UpRight">
+				<menu>UpRight.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br /><i>ChromeOverflowBug</i>.
 				</menu>
 			</menu></menu>
 			<menu type="float">Right<menu class="Right">
-				<menu>Right
-				</menu>
-			</menu></menu>
-			<menu type="float">DownRight<menu class="DownRight">
-				<menu>DownRight
+				<menu>Right<br /><br /><br /><br />
 				</menu>
 			</menu></menu>
 			<menu type="float">DownLeft<menu class="DownLeft">
-				<menu>DownLeft
+				<menu>DownLeft•••••••••••••••••••Width<br /><br /><br /><br />.
+				</menu>
+			</menu></menu>
+			<menu type="float">DownRight<menu class="DownRight">
+				<menu>DownRight<br /><br /><br /><i>.</i>
 				</menu>
 			</menu></menu>
 			<menu type="float">Down<menu class="Down">
-				<menu>Down
+				<menu>Down•••••••••••••Width<br /><br /><br /><br />.
 				</menu>
 			</menu></menu>
 		</menu></menu>
@@ -291,10 +399,12 @@ menu[type="float"]:hover>*>*{visibility:visible;opacity:1;z-index:1000;}			/*...
 
 		</menu></menu>
 
-		<menu type="context">Paradox<menu><menu type="toolbar">
-			<menu>&nbsp;<i> ... paranormal in Chrome ...</i>&nbsp;
-				
-				&nbsp;<i> ... and Opera ... </i>&nbsp;
+		<menu type="context">Paradox<menu><menu><menu type="toolbar">
+			<menu>
+				<h2>...&nbsp;paranormal&nbsp;:&nbsp;</h2><br />
+				&nbsp;<i> ...&nbsp;in&nbsp;Chrome&nbsp;...</i><br /><br />
+				&nbsp;<i> ...&nbsp;in&nbsp;FireFox&nbsp;... </i><br /><br />
+				&nbsp;<i> ... and Opera ... </i><br />&nbsp;
 			</menu>
 			<menu type="context" class="HTML5_logo_ terminus"><menu class="HTML5_logo_">
 				<menu><!-- ... add  class="HTML5_logo_" ... :/ ... -->
@@ -302,10 +412,12 @@ menu[type="float"]:hover>*>*{visibility:visible;opacity:1;z-index:1000;}			/*...
 					</menu>
 				</menu>
 			</menu></menu>
-		</menu></menu></menu>
+		</menu></menu></menu></menu>
+
 		<menu><menu type="list">
 
 		</menu></menu>
+
 		<menu><menu type="list">
 
 		</menu></menu>
