@@ -67,12 +67,12 @@ section menu[type="in_"]:hover>*>* {visibility:visible;opacity:1;}		/* ...width:
 	margin-top:0%;
 }
 
-.UpLeft {left:0%;top:-0%;}
-.UpLeft>* {left:-100%;margin-top:-100%;background-color:#ffd000;}
-.Up {left:0%;top:-0%;}
-.Up>* {left:0%;margin-top:-100%;background-color:#d0ff00;}
-.UpRight {left:100%;top:-0%;}
-.UpRight>* {left:0%;margin-top:-100%;margin-bottom:-0%;background-color:#ffff00;}
+.UpLeft {left:0%;top:-50%;}
+.UpLeft>* {left:-100%;margin-top:-50%;background-color:#ffd000;}
+.Up {left:0%;top:-50%;}
+.Up>* {left:0%;margin-top:-50%;background-color:#d0ff00;}
+.UpRight {left:100%;top:-50%;}
+.UpRight>* {left:0%;margin-top:-50%;margin-bottom:-0%;background-color:#ffff00;}
 .Right{left:100%;top:0%;}
 .Right>*{left:0%;margin-top:0%;background-color:#ff0000;}
 .DownRight{left:100%;top:100%;}
@@ -89,7 +89,8 @@ menu[type="float"] {min-height:30px;position:relative;}
 menu[type="float"]>* {position:absolute;background-color:#0000ff;visibility:hidden;}/**/
 
 menu[type="float"]>*>*{position:relative;}/* ...position:absolute; */
-menu[type="float"]>menu[class^="Up"]>*{} /*overflow-y:auto;height:130px;height:230px;width:230px; made fatal ... */
+menu[type="float"]>menu[class^="Up"]{height:130px;width:230px;} /*overflow-y:auto; ... */
+menu[type="float"]>menu[class^="Up"]>*{height:130px;width:230px;overflow-y:auto;} /*height:230px; made fatal ... */
 /*menu[type="float"]>*>*>*{position:static;} ...position:absolute; */
 
 /* menu[type="context"]>*>*{}  *//* ... */
@@ -289,15 +290,15 @@ menu[type="float"]:hover>*>*{visibility:visible;opacity:1;z-index:1000;}			/*...
 					<menu>=
 					</menu>
 					<menu type="context">!hole<menu type="hole">Hole<br />&nbsp;
-						<menu>=
+						<menu>!!!!!!!!!!
 						</menu>
 						<menu>???????
 							<menu>in hole!
-							</menu>
+							</menu><br />&nbsp;
 							<menu>in hole?
 							</menu>
 						</menu>
-						<menu><a href="#url">a=href<br />.</a>
+						<menu><a href="#url">&nbsp;<h1>hole</h1>&nbsp;</a>
 						</menu>
 					</menu></menu>
 					<menu type="context">=context<menu type="list">
