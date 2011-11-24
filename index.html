@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="windows-1251" ?>
-<!-- //[¤[TeRmiNuS_]@[logo_index.html]¤¤¤ ...
+<!-- //[¤[TeRmiNuS_]@[logo_index.html¤v1.2_¤]¤¤¤ ...
 //... [hole defenition ... :/ ...] ...
 //  -->
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=windows-1251" />
-<meta name="description" content="[TeRmiNuS_][logo_][56244ec7a8dfa22e85.94977760@[_pack_w_1.0.xhtml]¤Main¤Hili¤0¤]" />
+<meta name="description" content="[TeRmiNuS_][logo_index.html¤v1.2_¤][56244ec7a8dfa22e85.94977760@[_pack_w_1.0.xhtml]¤Main¤Hili¤0¤]" />
 <meta name="keywords" content="HTML,CSS,CSS3,HTML5" />
 <meta name="author" content="SanEcIn" />
 <meta name="revised" content="21/11/2011" />
@@ -56,7 +56,7 @@ menu[type="floatUp"]>*>*,menu[class="Up"]>* {background-color:#ffff00;}
 menu[type*="Down"]>*,menu[class*="Down"] {top:100%;}
 menu[type*="Down"]>*>*,menu[class*="Down"]>* {margin-top:0%;background-color:#4040ff;color:#ffffff;}
 -->
-menu[type="floatUp"]>menu,menu[class="Up"] {height:230px;width:430px;} /*overflow-y:auto; ... */
+menu[type="floatUp"]>menu,menu[class="Up"] {} /*height:230px;width:430px;overflow-y:auto; ... */
 menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;} /*overflow-y:auto; made fatal ... */
 
 </style>
@@ -81,8 +81,8 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 
  <menu type="toolbar">
 
-<!--/*[¤[TeRmiNuS_]@[Default_menu_.htm]¤v_1.0_¤ ... */
-/*[date¤23:11:2011]¤¤code_[ ... */-->
+<!--/*[¤[TeRmiNuS_]@[Default_menu_.htm]¤v_1.1_¤ ... */
+/*[date¤24:11:2011]¤¤code_[ ... */-->
 
 <menu type="context"><i class="list"> Default_¤1.0 </i><menu><menu type="toolbar"><i>Default_</i>
 	<menu type="context">toolbar&gt;context<menu><menu>
@@ -177,7 +177,7 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 
 </menu></menu></menu>
 
-<!--/* [Copyright 23/11/2011 SanEcIn][end_Default_menu_.htm ¤][¤¤]] */-->
+<!--/* [Copyright 24/11/2011 SanEcIn][end¤Default_menu_¤html¤][¤¤]] */-->
 
 <!--/*[¤[TeRmiNuS_]@[BUGfix.html]¤v_1.0_¤ ... */
 /*[date¤23:11:2011]¤¤code_[ ... */-->
@@ -271,7 +271,7 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 				</menu>
 				<br />
 				<br />
-				<menu type="hole"><a href="#url">a=href</a>
+				<menu type="hole"><a href="#url"> ... a=href ? playIt ... </a>
 				</menu>
 				<br />
 				<br />
@@ -336,12 +336,17 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 			</menu></menu>
 			<menu type="floatUpRight">UpRight<menu>
 				<menu>UpRight.<br /><br /><br /><i>ChromeOverflowBug</i><br /><br /><br /><br />... next MultiFloat
-					<menu type="float">Floats
-						<menu class="UpLeft"><menu>Up<br /><br />.<br /><br />.<br /><br />.Up.<menu type="list"><i>ChromeOverflowBug</i>.
-						</menu></menu></menu>
+					<menu type="float"><br />&nbsp;&nbsp;&nbsp;<i>... fired next Float menu ...</i><br />&nbsp;
+						<menu class="Up"><menu>Up<br /><br />.<br /><h1>This Level Dont visible On Chrome</h1><br />.<br /><br />.Up.<i>ChromeOverflowBug</i>.
+						</menu></menu>
+						<menu class="UpLeft"><menu>Up<br /><br />.<br /><br />.<br /><br />.Up.<i>ChromeOverflowBug</i>.
+						</menu></menu>
 						<menu class="Left"><menu>Up<br /><br />.<br /><br />.<br /><br />.Up.<i>ChromeOverflowBug</i>.
 						</menu></menu>
-					</menu><br /><br /><br />UpRight<br />.
+					</menu><br />... this is text <i>ON</i> the same level<br />like before ... BUGfix ? ... :/ ...<br />.
+					<menu>
+						<br /> <i>menu</i><br />.
+					</menu>
 				</menu>
 			</menu></menu>
 			<menu type="floatRight">Right<menu>
