@@ -47,6 +47,17 @@ section h1 {font-size:20px;}
 section h2 {font-size:16px;color:#ffffff;}
 
 
+<!--menu[type*="Left"]>*,menu[class*="Left"] {left:0%;top:0%;}
+menu[type*="Left"]>*>*,menu[class*="Left"]>* {left:-100%;background-color:#ff8080;}
+menu[type*="Right"]>*,menu[class*="Right"] {left:100%;top:0%;}
+menu[type*="Right"]>*>*,menu[class*="Right"]>* {left:0%;background-color:#00ff00;}
+menu[type*="Up"]>*,menu[class*="Up"] {top:-50%;}
+menu[type="floatUp"]>*>*,menu[class="Up"]>* {background-color:#ffff00;}
+menu[type*="Down"]>*,menu[class*="Down"] {top:100%;}
+menu[type*="Down"]>*>*,menu[class*="Down"]>* {margin-top:0%;background-color:#4040ff;color:#ffffff;}
+-->
+menu[type="floatUp"]>menu,menu[class="Up"] {height:230px;width:430px;} /*overflow-y:auto; ... */
+menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;} /*overflow-y:auto; made fatal ... */
 
 </style>
 
@@ -324,17 +335,21 @@ section h2 {font-size:16px;color:#ffffff;}
 				</menu>
 			</menu></menu>
 			<menu type="floatUpRight">UpRight<menu>
-				<menu>UpRight.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br /><i>ChromeOverflowBug</i>.
-					<menu type="floatUp">Up<menu><menu type="list"><br /><br />.<br /><br />.<br /><br />.Up.<i>ChromeOverflowBug</i>.</menu></menu>
-					</menu>
+				<menu>UpRight.<br /><br /><br /><i>ChromeOverflowBug</i><br /><br /><br /><br />... next MultiFloat
+					<menu type="float">Floats
+						<menu class="UpLeft"><menu>Up<br /><br />.<br /><br />.<br /><br />.Up.<menu type="list"><i>ChromeOverflowBug</i>.
+						</menu></menu></menu>
+						<menu class="Left"><menu>Up<br /><br />.<br /><br />.<br /><br />.Up.<i>ChromeOverflowBug</i>.
+						</menu></menu>
+					</menu><br /><br /><br />UpRight<br />.
 				</menu>
 			</menu></menu>
 			<menu type="floatRight">Right<menu>
-				<menu>Right<br /><br /><br /><br />
+				<menu>Right•••••••<br /><br /><br /><br />••••••••••••••Width
 				</menu>
 			</menu></menu>
 			<menu type="floatDownLeft">DownLeft<menu>
-				<menu>DownLeft•••••••••••••••••••Width<br /><br /><br /><br />.
+				<menu>DownLeft•••••••••••••••Width<br /><br /><br /><br />.
 				</menu>
 			</menu></menu>
 			<menu type="floatDownRight">DownRight<menu>
@@ -348,9 +363,9 @@ section h2 {font-size:16px;color:#ffffff;}
 				</menu></menu>
 				<menu class="UpLeft"><menu>UpLeft<br /><br /><i>ChromeOverflowBug</i>
 				</menu></menu>
-				<menu class="DownLeft"><menu>DownLeft•••••••••••••••••••Width<br /><br /><br /><br />.
+				<menu class="DownLeft"><menu>DownLeft•••••••••••••••Width<br /><br /><br /><br />.
 				</menu></menu>	
-				<menu class="Right"><menu>Right<br /><br /><br /><br />
+				<menu class="Right"><menu>Right•••••••<br /><br /><br /><br />••••••••••••••Width
 				</menu></menu>
 				<menu class="UpRight"><menu>UpRight.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br /><i>ChromeOverflowBug</i>.
 				</menu></menu>
