@@ -47,7 +47,7 @@ section h1 {font-size:20px;}
 section h2 {font-size:16px;color:#ffffff;}
 
 
-menu[type="floatUp"]>menu,menu[class="Up"] {height:230px;width:430px} /*;overflow-y:auto; ... */
+menu[type="floatUp"]>menu,menu[class="Up"] {} /*height:230px;width:430px;overflow-y:auto; ... */
 menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;} /*overflow-y:auto; made fatal ... */
 
 </style>
@@ -313,7 +313,7 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 
 	<menu>
 		<menu type="context">Floats<menu>
-			<menu type="floatUp">Up<menu>
+			<menu type="float">Up<menu class="Up">
 				 <menu>... ? Up ... <br><br><br><br>... here is <br /> the some <br /> <i>text</i>for Example<br /><i>ChromeOverflowBug</i>
 				</menu>
 			</menu></menu>
