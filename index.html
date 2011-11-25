@@ -8,7 +8,7 @@
 <meta name="description" content="[TeRmiNuS_][logo_index.html¤v1.2_¤][56244ec7a8dfa22e85.94977760@[_pack_w_1.0.xhtml]¤Main¤Hili¤0¤]" />
 <meta name="keywords" content="HTML,CSS,CSS3,HTML5" />
 <meta name="author" content="SanEcIn" />
-<meta name="revised" content="21/11/2011" />
+<meta name="revised" content="25/11/2011" />
 <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAqElEQVR4nK1TAQ6EIAzbLv4Lfnb4M3mZUoRlLE6N2gTJyNaVTpiIVnoBBkEqn7+TMJ8Uo+73pjsw2YO8LBRCkNgqm5nPCYQo52cKOkKMe8cLgu89EKz7dB954N1fmzsQJNWp3106tj2W6WiktsODQRPGCPnZFDhgfwpFLkiiio8gU+hS6xWaUSjqq+YYA4FBAUjE9ZZ89R8IQVKH3sOyebWPie8+banbAHvaKKvPtI3SAAAAAElFTkSuQmCC" />
 <title>[TeRmiNuS_][logo_][h][42024ec7a8dfa21d11.69743197]</title>
 
@@ -25,7 +25,7 @@ section,header,article,footer {display:block;}
 
 section {position:relative;background:#d0ffd0;margin:20px auto;padding:10px;width:800px;height:512px;}
 section *{margin:0;padding:0;}
-	
+
 section>*{}
 
 section *{}
@@ -47,16 +47,7 @@ section h1 {font-size:20px;}
 section h2 {font-size:16px;color:#ffffff;}
 
 
-<!--menu[type*="Left"]>*,menu[class*="Left"] {left:0%;top:0%;}
-menu[type*="Left"]>*>*,menu[class*="Left"]>* {left:-100%;background-color:#ff8080;}
-menu[type*="Right"]>*,menu[class*="Right"] {left:100%;top:0%;}
-menu[type*="Right"]>*>*,menu[class*="Right"]>* {left:0%;background-color:#00ff00;}
-menu[type*="Up"]>*,menu[class*="Up"] {top:-50%;}
-menu[type="floatUp"]>*>*,menu[class="Up"]>* {background-color:#ffff00;}
-menu[type*="Down"]>*,menu[class*="Down"] {top:100%;}
-menu[type*="Down"]>*>*,menu[class*="Down"]>* {margin-top:0%;background-color:#4040ff;color:#ffffff;}
--->
-menu[type="floatUp"]>menu,menu[class="Up"] {} /*height:230px;width:430px;overflow-y:auto; ... */
+menu[type="floatUp"]>menu,menu[class="Up"] {height:230px;width:430px} /*;overflow-y:auto; ... */
 menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;} /*overflow-y:auto; made fatal ... */
 
 </style>
@@ -297,16 +288,16 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 				</div></div>
 			</div>
 
-		
+
 
 	</terminus></menu>
 
 	<menu>&nbsp;<br />
 		&nbsp;HTML5<br />
 		<h2>This logo introduce :</h2>
-		• jump thru the Hole ... hidden absolute element ...<br />
+		? jump thru the Hole ... hidden absolute element ...<br />
 		&nbsp;... its position has  in percentage from parent size ...<br />
-	  	• next image has the position from self size percentage range ...<br />
+	  	? next image has the position from self size percentage range ...<br />
 		&nbsp;... so, one positioning by percentage have independent from size values ... :/ ... <br />
 		&nbsp;
 	</menu>
@@ -322,16 +313,16 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 
 	<menu>
 		<menu type="context">Floats<menu>
-			<menu type="floatUp">Up<menu><menu>
-				 ... ? Up ... <br><br><br><br>... here is <br /> the some <br /> <i>text</i>for Example<br /><i>ChromeOverflowBug</i>
-				
-			</menu></menu></menu>
+			<menu type="floatUp">Up<menu>
+				 <menu>... ? Up ... <br><br><br><br>... here is <br /> the some <br /> <i>text</i>for Example<br /><i>ChromeOverflowBug</i>
+				</menu>
+			</menu></menu>
 			<menu type="floatUpLeft">UpLeft<menu>
 				<menu>UpLeft<br /><br /><i>ChromeOverflowBug</i>
 				</menu>
 			</menu></menu>
 			<menu type="floatLeft">Left<menu>
-				<menu>Left•••••••••••••••••••••••Width<br /><br /><br /><br />.
+				<menu>Left???????????????????????Width<br /><br /><br /><br />.
 				</menu>
 			</menu></menu>
 			<menu type="floatUpRight">UpRight<menu>
@@ -350,11 +341,11 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 				</menu>
 			</menu></menu>
 			<menu type="floatRight">Right<menu>
-				<menu>Right•••••••<br /><br /><br /><br />••••••••••••••Width
+				<menu>Right???????<br /><br /><br /><br />??????????????Width
 				</menu>
 			</menu></menu>
 			<menu type="floatDownLeft">DownLeft<menu>
-				<menu>DownLeft•••••••••••••••Width<br /><br /><br /><br />.
+				<menu>DownLeft???????????????Width<br /><br /><br /><br />.
 				</menu>
 			</menu></menu>
 			<menu type="floatDownRight">DownRight<menu>
@@ -362,15 +353,15 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 				</menu>
 			</menu></menu>
 			<menu type="float">Multi
-				<menu class="Left"><menu>Left•••••••••••••••••••••••Width<br /><br /><br /><br />.
+				<menu class="Left"><menu>Left???????????????????????Width<br /><br /><br /><br />.
 				</menu></menu>
 				<menu class="Up"><menu> ... ? Up ... <br><br><br><br>... here is <br /> the some <br /> <i>text</i>for Example<br /><i>ChromeOverflowBug</i>
 				</menu></menu>
 				<menu class="UpLeft"><menu>UpLeft<br /><br /><i>ChromeOverflowBug</i>
 				</menu></menu>
-				<menu class="DownLeft"><menu>DownLeft•••••••••••••••Width<br /><br /><br /><br />.
+				<menu class="DownLeft"><menu>DownLeft???????????????Width<br /><br /><br /><br />.
 				</menu></menu>	
-				<menu class="Right"><menu>Right•••••••<br /><br /><br /><br />••••••••••••••Width
+				<menu class="Right"><menu>Right???????<br /><br /><br /><br />??????????????Width
 				</menu></menu>
 				<menu class="UpRight"><menu>UpRight.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br />.<br /><br /><i>ChromeOverflowBug</i>.
 				</menu></menu>
@@ -378,7 +369,7 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 				</menu></menu>
 			</menu>
 			<menu type="floatDown">Down<menu class="list">
-				<menu>Down•••••••••••••Width<br /><br /><br /><br />.
+				<menu>Down?????????????Width<br /><br /><br /><br />.
 				</menu>
 			</menu></menu>
 		</menu></menu>
@@ -412,11 +403,11 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 
 	</menu>
 	<menu><!-- ...  :/ ... -->
-		
+
 	</menu>
 	<menu>&nbsp;<br />&nbsp;
 		<h2>&nbsp;&nbsp;... applied to menu type="context": &nbsp;&nbsp;</h2>
-		
+
 &nbsp;<i></i>&nbsp;
 
 		&nbsp;
@@ -476,10 +467,10 @@ menu[type="floatUp"]>menu>menu,menu[class="Up"]>menu {height:230px;width:430px;}
 <div onclick="http://www.w3.org/html/logo/" class="HTML5_logo_">
 	<div><div></div></div>
 </div>
-	
+
 </footer>
 </section>
 
 
 </body></html>
-<!-- /* [Copyright 21/11/2011 SanEcIn][] ¤][¤¤] */-->
+<!-- /* [Copyright 25/11/2011 SanEcIn][] ¤][¤¤] */-->
